@@ -1,6 +1,8 @@
 # Recon.py
 This is the recon scanning tool I had to create as part of my Scripting module. I have copied the repository from my school account to also store it here for later reflection, as I may come back to this in the future to improve upon it in my own time, when I feel I am ready to do a better job.
 
+I recieved a grade of 73% for this project.
+
 # Assignment2, project overview:
 Repository for assignment 2, recon.py <br>
 This is a scanning tool called recon.py, designed to be used to gather information from a websites open ports, and output it to a readable json and csv file. It is ran through the CLI.
