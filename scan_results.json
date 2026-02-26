@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "run_started": "2025-12-14T23:26:34.450626+00:00",
+    "args": {
+      "targets": "targets.txt",
+      "ports": "80,443",
+      "workers": 50,
+      "timeout": 4.0,
+      "out": "scan_results.json",
+      "tls": true,
+      "http": true
+    },
+    "resumed": false
+  },
+  "targets": {
+    "example.com": {
+      "elapsed": 2.31290602684021,
+      "ports": {
+        "80": {
+          "port": 80,
+          "open": true,
+          "reason": null,
+          "banner": null,
+          "tls": {
+            "subject_cn": null,
+            "issuer_cn": null,
+            "notBefore": null,
+            "notAfter": null,
+            "expired": null,
+            "days_left": null,
+            "san": [],
+            "error": "_ssl.c:983: The handshake operation timed out"
+          },
+          "http": {
+            "url": "http://example.com:80/",
+            "final_url": "http://example.com:80/",
+            "status_code": 200,
+            "title": "Example Domain",
+            "meta_description": null,
+            "server_header": null,
+            "cookies": [],
+            "headers": {
+              "Accept-Ranges": "bytes",
+              "Content-Type": "text/html",
+              "ETag": "\"bc2473a18e003bdb249eba5ce893033f:1760028122.592274\"",
+              "Last-Modified": "Thu, 09 Oct 2025 16:42:02 GMT",
+              "Content-Length": "513",
+              "Cache-Control": "max-age=86000",
+              "Date": "Sun, 14 Dec 2025 23:26:45 GMT",
+              "Connection": "keep-alive"
+            },
+            "error": null,
+            "robots_txt": {
+              "url": "http://example.com:80/robots.txt",
+              "exists": false,
+              "status_code": null,
+              "snippet": null,
+              "error": "HTTPConnectionPool(host='example.com', port=80): Read timed out. (read timeout=4.0)"
+            },
+            "sitemap_xml": {
+              "url": "http://example.com:80/sitemap.xml",
+              "exists": false,
+              "status_code": null,
+              "snippet": null,
+              "error": "HTTPConnectionPool(host='example.com', port=80): Read timed out. (read timeout=4.0)"
+            },
+            "favicon_sha256": null,
+            "wordpress": {
+              "/wp-login.php": {
+                "url": "http://example.com:80/wp-login.php",
+                "exists": false,
+                "status_code": 404,
+                "error": null
+              },
+              "/xmlrpc.php": {
+                "url": "http://example.com:80/xmlrpc.php",
+                "exists": false,
+                "status_code": null,
+                "error": "HTTPConnectionPool(host='example.com', port=80): Read timed out. (read timeout=4.0)"
+              }
+            }
+          },
+          "fingerprint_tags": []
+        },
+        "443": {
+          "port": 443,
+          "open": true,
+          "reason": null,
+          "banner": null,
+          "tls": {
+            "subject_cn": null,
+            "issuer_cn": null,
+            "notBefore": null,
+            "notAfter": null,
+            "expired": null,
+            "days_left": null,
+            "san": [],
+            "error": "Empty certificate returned"
+          },
+          "http": {
+            "url": "https://example.com:443/",
+            "final_url": "https://example.com:443/",
+            "status_code": 200,
+            "title": "Example Domain",
+            "meta_description": null,
+            "server_header": null,
+            "cookies": [],
+            "headers": {
+              "Accept-Ranges": "bytes",
+              "Content-Type": "text/html",
+              "ETag": "\"bc2473a18e003bdb249eba5ce893033f:1760028122.592274\"",
+              "Last-Modified": "Thu, 09 Oct 2025 16:42:02 GMT",
+              "Content-Length": "513",
+              "Cache-Control": "max-age=86000",
+              "Date": "Sun, 14 Dec 2025 23:27:08 GMT",
+              "Connection": "keep-alive",
+              "Alt-Svc": "h3=\":443\"; ma=93600"
+            },
+            "error": null,
+            "robots_txt": {
+              "url": "https://example.com:443/robots.txt",
+              "exists": false,
+              "status_code": 404,
+              "snippet": null,
+              "error": null
+            },
+            "sitemap_xml": {
+              "url": "https://example.com:443/sitemap.xml",
+              "exists": false,
+              "status_code": 404,
+              "snippet": null,
+              "error": null
+            },
+            "favicon_sha256": null,
+            "wordpress": {
+              "/wp-login.php": {
+                "url": "https://example.com:443/wp-login.php",
+                "exists": false,
+                "status_code": 404,
+                "error": null
+              },
+              "/xmlrpc.php": {
+                "url": "https://example.com:443/xmlrpc.php",
+                "exists": false,
+                "status_code": 404,
+                "error": null
+              }
+            }
+          },
+          "fingerprint_tags": []
+        }
+      }
+    },
+    "scanme.nmap.org": {
+      "elapsed": 0.1860499382019043,
+      "ports": {
+        "80": {
+          "port": 80,
+          "open": true,
+          "reason": null,
+          "banner": null,
+          "tls": {
+            "subject_cn": null,
+            "issuer_cn": null,
+            "notBefore": null,
+            "notAfter": null,
+            "expired": null,
+            "days_left": null,
+            "san": [],
+            "error": "[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)"
+          },
+          "http": {
+            "url": "http://scanme.nmap.org:80/",
+            "final_url": "http://scanme.nmap.org:80/",
+            "status_code": 200,
+            "title": "Go ahead and ScanMe!",
+            "meta_description": null,
+            "server_header": "Apache/2.4.7 (Ubuntu)",
+            "cookies": [],
+            "headers": {
+              "Date": "Sun, 14 Dec 2025 23:27:15 GMT",
+              "Server": "Apache/2.4.7 (Ubuntu)",
+              "Accept-Ranges": "bytes",
+              "Vary": "Accept-Encoding",
+              "Content-Encoding": "gzip",
+              "Content-Length": "2068",
+              "Keep-Alive": "timeout=5, max=100",
+              "Connection": "Keep-Alive",
+              "Content-Type": "text/html"
+            },
+            "error": null,
+            "robots_txt": {
+              "url": "http://scanme.nmap.org:80/robots.txt",
+              "exists": false,
+              "status_code": 404,
+              "snippet": null,
+              "error": null
+            },
+            "sitemap_xml": {
+              "url": "http://scanme.nmap.org:80/sitemap.xml",
+              "exists": false,
+              "status_code": 404,
+              "snippet": null,
+              "error": null
+            },
+            "favicon_sha256": null,
+            "wordpress": {
+              "/wp-login.php": {
+                "url": "http://scanme.nmap.org:80/wp-login.php",
+                "exists": false,
+                "status_code": 404,
+                "error": null
+              },
+              "/xmlrpc.php": {
+                "url": "http://scanme.nmap.org:80/xmlrpc.php",
+                "exists": false,
+                "status_code": 404,
+                "error": null
+              }
+            }
+          },
+          "fingerprint_tags": []
+        },
+        "443": {
+          "port": 443,
+          "open": false,
+          "reason": "refused",
+          "banner": null,
+          "tls": null,
+          "http": null,
+          "fingerprint_tags": []
+        }
+      }
+    }
+  }
+}

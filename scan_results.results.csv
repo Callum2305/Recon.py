@@ -1,0 +1,4 @@
+host,port,proto,service_hint,http_status,title,server_header,cert_subject_cn,cert_notAfter,banner_snippet,fingerprint_tags
+example.com,80,tcp,http,200,Example Domain,,,,,
+example.com,443,tcp,https,200,Example Domain,,,,,
+scanme.nmap.org,80,tcp,http,200,Go ahead and ScanMe!,Apache/2.4.7 (Ubuntu),,,,
