@@ -4,7 +4,7 @@ This is the recon scanning tool I had to create as part of my Scripting module. 
 # Assignment2, project overview:
 Repository for assignment 2, recon.py <br>
 This is a scanning tool called recon.py, designed to be used to gather information from a websites open ports, and output it to a readable json and csv file. It is ran through the CLI.
-Video demo can be found here: https://setuo365-my.sharepoint.com/:f:/g/personal/c00306572_setu_ie/IgCQKlu7AGZ_SrDsxt-9T1OHAbuW7dfZ4cWUA0M9WMxSHN4?e=Yh1ubv
+
 # Requirements:
 The following is a list of all libraries used to create this file: <br>
 socket, argparse, concurrent.futures, json, time, ssl, re, requests, hashlib, csv and datetime
